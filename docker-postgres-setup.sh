@@ -2,12 +2,12 @@
 #################################################################################
 #
 #Run example: N/A
-#File:      docker-postgres-setup.sh
-#Date:      2022FEB11
-#Author:    William Blair
-#Contact:	williamblair333@gmail.com
-#Tested on: Debian 11
-#To test:   Ubuntu 14+
+#File:        docker-postgres-setup.sh
+#Date:        2022FEB11
+#Author:      William Blair
+#Contact:     williamblair333@gmail.com
+#Tested on:   Debian 11
+#To test:     Ubuntu 14+
 #
 #This script is intended to do the following:
 #
