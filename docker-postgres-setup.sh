@@ -1,5 +1,22 @@
 #!/bin/bash
 #################################################################################
+#
+#Run example: N/A
+#File:      docker-postgres-setup.sh
+#Date:      2022FEB11
+#Author:    William Blair
+#Contact:	williamblair333@gmail.com
+#Tested on: Debian 11
+#To test:   Ubuntu 14+
+#
+#This script is intended to do the following:
+#
+#- use docker to create a container and volume for postgres which in turn will
+#- provide a database server for flask, ssms and anything else 
+#- This is also provided as a reference and is a work in progress
+#
+#################################################################################
+#################################################################################
 #docker container, volume and everything else location..
 #/var/lib/docker/
 #some useful commands..
