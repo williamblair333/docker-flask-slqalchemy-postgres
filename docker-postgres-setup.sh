@@ -56,7 +56,8 @@ sudo docker volume create $volume
 sudo docker run \
     -d --name $dbname \
     -e POSTGRES_USER=$dbuser \
-    -e POSTGRES_PASSWORD=$dbpassword -e PGDATA=$pgdata \
+    -e POSTGRES_PASSWORD=$dbpassword \
+    -e PGDATA=$pgdata \
     -v $volume:$pgvolume \
     -p $port_in:$port_out \
     -it $image
