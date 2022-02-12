@@ -34,7 +34,7 @@
 volume=postgres13-bullseye-training
 dbname=$volume
 dbuser=postgres
-dbpassword='!1qqaazz'
+dbpassword='YourStrong@Passw0rd'
 pgdata=/var/lib/postgresql/data/pgdata
 pgvolume=/var/lib/postgresql/data
 port_in=5432
