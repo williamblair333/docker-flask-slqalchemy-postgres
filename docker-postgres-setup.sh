@@ -64,7 +64,7 @@ sudo docker run \
 #################################################################################
  
 #troubleshooting to quickly remove container and its associated volume
-sudo docker container stop container_id && \
-    sudo docker container_id && \
-    sudo docker volume rm $volume
+#sudo docker container stop container_id && \
+#    sudo docker container_id && \
+#    sudo docker volume rm $volume
 #################################################################################
