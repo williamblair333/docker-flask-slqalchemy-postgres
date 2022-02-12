@@ -19,7 +19,7 @@
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
 #Install some necessary packages 
-sudo apt-get update && sudo apt-get install \
+sudo apt-get update && sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -39,7 +39,7 @@ echo \
     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 #Now install Docker
-sudo apt-get update && sudo apt-get install \
+sudo apt-get update && sudo apt-get install -y \
     docker-ce \
     docker-ce-cli \
     containerd.io
