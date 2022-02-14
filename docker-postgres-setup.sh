@@ -32,15 +32,14 @@
 #set variables for the container and volume
  
 volume=postgres13-bullseye-training
-dbname=$volume
-dbuser=postgres
-dbpassword='YourStrong@Passw0rd'
+db_name=$volume
+db_user='postgres'
+db_password='YourStrong@Passw0rd'
 pgdata=/var/lib/postgresql/data/pgdata
 pgvolume=/var/lib/postgresql/data
 port_in=5432
 port_out=5432
 image=postgres:13-bullseye
-detach=postgres
 #################################################################################
  
 #setup container and volume
@@ -54,9 +53,10 @@ sudo docker volume create $volume
  
 #create the container
 sudo docker run \
-    -d --name $dbname \
-    -e POSTGRES_USER=$dbuser \
-    -e POSTGRES_PASSWORD=$dbpassword \
+    -d \
+	--name $db_name \
+    -e POSTGRES_USER=$db_user \
+    -e POSTGRES_PASSWORD=$db_password \
     -e PGDATA=$pgdata \
     -v $volume:$pgvolume \
     -p $port_in:$port_out \
