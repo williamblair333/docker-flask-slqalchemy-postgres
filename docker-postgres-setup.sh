@@ -54,7 +54,7 @@ sudo docker volume create $volume
 #create the container
 sudo docker run \
     -d \
-	--name $db_name \
+    --name $db_name \
     -e POSTGRES_USER=$db_user \
     -e POSTGRES_PASSWORD=$db_password \
     -e PGDATA=$pgdata \
